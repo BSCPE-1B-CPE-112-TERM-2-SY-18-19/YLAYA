@@ -1,0 +1,80 @@
+#include <iostream>
+
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+class cpe1b //create a class using name cpe1b
+    {
+	public:
+
+		int p,q,r; //declarations sa mga variables nga gamitunon
+
+      void twovarswapping(); //void, using a twovarswapping
+
+		  void threevarswapping(); //void, using a threevarswapping
+
+    };
+
+int main()
+    {
+    
+	    cpe1b call; 
+
+    	call.twovarswapping(); 
+
+    	call.threevarswapping();
+
+      	return 0;
+
+    }
+
+        void cpe1b::twovarswapping() //process in function
+
+    {
+
+	    cout<<"Two variables"<<endl<<"Enter P:"; 
+
+      cin>>p; //input value in p
+
+    	cout<<"Enter Q:";
+
+    	cin>>q; //input value in Q
+    
+	    q=p+q; //process for swapping using other varible
+
+	    p=q-p;
+
+    	q=q-p;
+
+	    cout<<"Swap"<<endl<<"P:"<<x<<endl<<"Q:"<<y<<endl; //output
+
+      }
+
+        void cpe1b::threevarswapping() //process in function
+
+      {
+
+	        cout<<endl<<"Three variable"<<endl<<"Enter P:";
+
+        	cin>>p; //input value in p
+
+	        cout<<"Enter Q:";
+
+	        cin>>q; //input value in Q
+
+        	cout<<"Enter R:";
+
+	        cin>>r;//input value in R
+
+	        p=p+q+r; //process for swapping three variable
+
+         	y=p-q-r; 
+
+        	z=p-q-r;
+
+        	p=p-(q+r);
+  
+        	cout<<"Swap"<<endl<<"P:"<<p<<endl<<"Q:"<<q<<endl<<"R:"<<r; //output
+
+}
